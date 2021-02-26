@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 90.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Prociono', serif;
+    background: wheat;
+    
+}
+.main{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+form{
+    width: 70%;
+    background: #fff;
+    display: flex;
+    box-shadow: 5px 10px 15px  rgba(0,0,0,0.4);
+}
+h1{
+    
+    width: 70%;
+    text-align: center;
+    font-weight: 900;
+    color:#fff ;
+    background: tomato;
+    padding: 10px 0;
+}
+.left, .right{
+    width: 50%;
+    padding: 20px;
+}
+.left label{
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: block;
+    text-transform: capitalize;
+    color: saddlebrown;
+    margin-bottom: 4px;
+}
+.left input,.left textarea ,#select{
+    width: 100%;
+    margin-bottom: 15px;
+    padding:7px ;
+    outline: saddlebrown;
+    border: 2px solid tan;
+    background: wheat;
+}
+.left input:hover, .left textarea:hover{
+    background: khaki;
+}
+#selectlbl{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: block;
+    text-transform: capitalize;
+    color: saddlebrown;
+    margin-bottom: 16px;
+}
+.right label{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: saddlebrown;
+    margin-bottom: 4px;
+padding: 3px;
+}
+.right .check{
+    font-size: 1.4rem;
+    margin-left: 4px;
+}
+h2{
+    margin: 20px 0;
+    color: white;
+    background: tan;
+    padding: 7px 5px;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.cheese, .toppings{
+    padding: 20px 0;
+    border-bottom: 1.5px solid tan;
+}
+.btn{
+    padding: 20px 0;
+}
+input[type='button']{
+    color:#fff;
+    padding: 10px 15px 10px 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: forestgreen;
+    border-radius: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+input[type='button']:hover{
+    opacity: 0.8;
+}
+.btn a{
+    color: olive;
+    text-transform: capitalize;
+}
+@media(max-width:720px){
+    body{
+        height: 100%;
+    }
+    form{
+        flex-direction: column;
+    }
+    .left,.right{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    h1{
+        width: 90%;
+    }
+    form{
+        width: 90%;
+    }
+}

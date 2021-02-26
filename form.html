@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styule.css">
+    <title>contact form</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Order Your Pizza</h1>
+         <form action="" method="POST">
+            <section class="left">
+                <label for="name"> your name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="email">
+                <label for="phone">phone number</label>
+                <input type="phone" id="phone" name="phone">
+                <label for="address">deleviry addresss </label>
+                <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                <label for="note">notes to driver</label>
+                <textarea name="notes" id="notes" cols="30" rows="5"></textarea>
+            </section>
+            <section class="right">
+                <label for="select" id="selectlbl">choose your crust</label>
+                <select name="select" id="select">
+                    <option value="wheat">wheat</option>
+                    <option value="white">white</option>
+                    <option value="thin crust">thin crust</option>
+                </select>
+                <input type="checkbox">
+                <label for="checkbox" class="check">Extra Crispy Crust?</label>
+                <h2>Cheese:</h2>
+                <div class="cheese">
+                    <input type="radio" name="cheese" id="cheese">
+                <label for="less">less cheese</label>
+                <input type="radio" name="cheese" id="cheese">
+                <label for="extra">extra cheese</label>
+                <input type="radio" name="cheese" id="cheese">
+                <label for="no">no cheese</label>
+                </div>
+
+                <h2>Toppings (choose as many as you want)</h2>
+                <div class="toppings">
+                    <input type="checkbox" name="pepperoni" id="">
+                <label for="pepperoni">pepperoni</label>
+                <input type="checkbox" name="veggies" id="">
+                <label for="veggies">veggies</label>
+                <input type="checkbox" name="ham" id="">
+                <label for="ham">ham</label>
+                <input type="checkbox" name="sausage" id="">
+                <label for="sausage">sausage</label>
+
+                </div>
+                <div class="btn">
+                    <input type="button" value="Give me PIZZA">
+                <a href="#">start over</a>
+                </div>
+            </section>
+        </form>
+    </div>
+    
+</body>
+</html>
